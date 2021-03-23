@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="event.css">
+    
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="js/jquery.rwdImageMaps.min.js"></script>
+
+    <link rel="shortcut icon" href="img/favicon.ico" image/x-icon">
+</head>
+<body>
+    <div id="wrap">
+        <header><img src="img/fixed_nav.png" alt=""></header>
+        <aside></aside>
+        <div class="aside2"></div>
+
+        <section>
+            <div class="intro">
+                <img src="img/event_intro.png" alt="" >
+            </div>
+            <div class="event">
+                <img src="img/event.png" alt="" usemap="#btn">
+                <map name="btn" id="btn">
+                    <area shape="rect" coords="451,1317,778,1437" 
+                        href="http://crazyskin.co.kr/index.html" alt="바로가기" onfocus="this.blur()">
+                </map>
+            </div>
+            <footer>
+                <img src="img/footer.png" alt="">
+            </footer>
+        </section>
+    </div>
+
+    <script>
+        $(document).ready(function(e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+
+</body>
+</html>
