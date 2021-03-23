@@ -1,12 +1,4 @@
 body, header {margin: 0; padding: 0;}
-/* body {margin: 0 auto; width: 100%;}
-header {background-color: pink; width: 100%; height:}
-Some Change I make to demonstrate! 
-Save File and you will see the one sign on the left side
-This shows you, that a file has been changed and can be pushed to git.
-You have to click on the plus to "Stage" the file.
-*/
-
 #wrap{ width: 100%; margin: 0 auto;}
 header{width: 100%; height: 15%; position: fixed; text-align: center;}
 header img {width: 100%; height: auto; }
